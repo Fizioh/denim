@@ -5,4 +5,15 @@ window.addEventListener("load",function(){
     var txt = parent.innerText;
     parseInt.innerText = "";
 
+    /* chaine txt crée en tant qu'enfants individuel de h1 // propriétés de vitesse et de position et opacité aléatoires */
+    for(var i=0; i<txt.length; i++){
+        var letter = document.createElement("span");
+        letter.speed = Math.floor(Math.random()*400)+2;
+        letter.originY = letter.y;
+        letter.opacity = 1;
+        letter.innerText = txt[i];
+        letter.style.top = letter.y+"px";
+        parent.appendChild(letter);
+    }
+
 })
