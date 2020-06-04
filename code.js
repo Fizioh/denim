@@ -16,4 +16,16 @@ window.addEventListener("load",function(){
         parent.appendChild(letter);
     }
 
+    this.window.addEventListener("scroll",function(){
+        let scrollUp = (window.lastScrollY < window.scrollY ? true : false);
+        var nodes = document.querySelectorAll("h1 > *");
+        if(window.scrollY < window.screen.height*2)
+        {
+
+        }else {
+
+        }
+        window.lastScrollY = window.scrollY;
+    })
+
 })
