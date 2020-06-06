@@ -19,13 +19,25 @@ window.addEventListener("load",function(){
     this.window.addEventListener("scroll",function(){
         let scrollUp = (window.lastScrollY < window.scrollY ? true : false);
         var nodes = document.querySelectorAll("h1 > *");
-        if(window.scrollY < window.screen.height*2)
-        {
+        if(window.scrollY < window.screen.height*2){
+            for(var i=0; i< nodes.length; i++){
+                var speed = nodes[i].speed;
+                if (scrollUp == true){
+                    nodes[i].y -= speed;
+                    if(nodes[i].y <= 0)
+                        nodes[i].y = 0;
+                }else{
+                    nodes[i].y += speed;
+                    if(nodes[i].y > nodes[i].originY)
+                    nodes[i].y = nodes[i].originY;
+                }
+                nodes[i].style.top = nodes[i].y+"px";
+            }
+        }else{
 
-        }else {
-
-        }
+        
+    }
         window.lastScrollY = window.scrollY;
-    })
+    });
 
-})
+        });
