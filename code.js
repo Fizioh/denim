@@ -34,7 +34,14 @@ window.addEventListener("load",function(){
                 nodes[i].style.top = nodes[i].y+"px";
             }
         }else{
+            for(var i=0; i<nodes.length; i++){
+                if(scrollUp == true && nodes[i].opacity > 0)
+                nodes[i].opacity -= 1/(1+i*10);
+                else if(scrollUp == false && nodes[i].opacity < 1)
+                nodes[i].opacity += 1/(1+i*10);
 
+                nodes[i].style.opacity = nodes[i].opacity;
+            }
         
     }
         window.lastScrollY = window.scrollY;
