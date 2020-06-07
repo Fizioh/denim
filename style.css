@@ -1,11 +1,17 @@
 html, body {
     min-height: 800vh;
 }
+body {
+    background-image:url("jeans.jpg");
+    background-position:center center;
+
+}
 h1 {
     position: fixed;
     text-align: center;
     width: 100%;
     font-size: 4em;
+    color: whitesmoke;
 }
 h1 > *{
     position: relative;
