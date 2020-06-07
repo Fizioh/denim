@@ -18,3 +18,57 @@ h1 > *{
     display: inline-block;
     top: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+section {
+    height: 100vh;
+}
+section#home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.mouse-down-container {
+    padding: 100px 0 120px 0;
+
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 1));
+}
+.mouse-down {
+    display: block;
+
+    height: 45px;
+    width: 30px;
+
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: 30px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: border-color .25s ease-in-out;
+    animation: mouse-animation 2.5 ease-in-out infinite;
+}
+.mouse-down .mouse-scroll {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 3px;
+    height: 7.5px;
+    border-radius: 3px;
+
+    background-color: rgba(255, 255, 255, .6);
+
+    animation: scroll-animation 2.5s ease-in-out infinite;
+    transition: background .25s ease-in-out;
+}
