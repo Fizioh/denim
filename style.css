@@ -114,3 +114,21 @@ section#home {
         transform: translateX(-50%) translateY(15px);
     }
 }
+
+@keyframes scroll-animation {
+    from {
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(-50%, -50%) translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-50%, -50%) translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-50%, -50%) translateY(15px);
+        opacity: 1;
+    }
+}
