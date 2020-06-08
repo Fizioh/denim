@@ -88,3 +88,14 @@ section#home {
     border-radius: 30px;
 }
 
+.mouse-down:hover::after {
+    display: block;
+    animation: after-animation 2.5 ease-in-out infinite;
+}
+.mouse-down:hover {
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 1);
+}
+.mouse-down:hover .mouse-scroll {
+    background-color: rgba(255, 255, 255, 1);
+}
