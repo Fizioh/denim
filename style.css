@@ -26,6 +26,7 @@ body {
 } 
 nav {
     background-color: black;
+    justify-content: center;
 }
 .nav-list {
     list-style-type: none;
@@ -48,14 +49,12 @@ nav {
     position: absolute;
     top: 0;
     width: 0;
-    background: linear-gradient(0.55turn, #3f87a6, #ebf8e1, #f69d3c);
-    transition: 0.3s ease-in-out;
 }
 .nav-links:hover::before{
     width: 100%;
 }
 .nav-links:hover{
-    color:black;
+    color: #3f87a6;
 }
 
 
