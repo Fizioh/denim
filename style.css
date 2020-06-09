@@ -23,7 +23,42 @@ html {
 }
 body {
     margin: 0;
+} 
+nav {
+    background-color: black;
 }
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+.nav-links {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: 3px;
+    padding: 15px 30px;
+    margin: 0 18px;
+    transition: color 0.3s ease-in-out;
+}
+.nav-links::before {
+    z-index: -1;
+    content:"";
+    position: absolute;
+    top: 0;
+    width: 0;
+    background-image: linear-gradient(to right,#alc4fd,#c2e9fb);
+    transition: width 0.3s ease-in-out;
+}
+.nav-links:hover::before{
+    width: 100%;
+}
+.nav-links:hover{
+    color:black;
+}
+
+
 section {
     height: 100vh;
 }
