@@ -18,6 +18,9 @@ h1 > *{
     display: inline-block;
     top: 0;
 }
+h2 {
+    color:white;
+}
 html {
     scroll-behavior: smooth;
 }
