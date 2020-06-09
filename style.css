@@ -24,13 +24,11 @@ html {
 body {
     margin: 0;
 } 
-nav {
-    background-color: black;
-    justify-content: center;
-}
+
 .nav-list {
     list-style-type: none;
     display: flex;
+    justify-content: center;
 }
 .nav-links {
     position: relative;
@@ -71,7 +69,7 @@ section#home {
     justify-content: flex-end;
 }
 .mouse-down-container {
-    padding: 100px 0 120px 0;
+    padding: 100px 0 160px 0;
 
     background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 1));
 }
