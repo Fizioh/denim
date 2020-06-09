@@ -48,7 +48,7 @@ nav {
     position: absolute;
     top: 0;
     width: 0;
-    background-image: linear-gradient(to right,#alc4fd,#c2e9fb);
+    background: linear-gradient(0.55turn, #3f87a6, #ebf8e1, #f69d3c);
     transition: width 0.3s ease-in-out;
 }
 .nav-links:hover::before{
